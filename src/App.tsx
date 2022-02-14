@@ -29,13 +29,12 @@ function App() {
         isOpen={isOpen}
         title="Icon"
         customIcon={{icon : icon, iconAlt : "This is icon alt"}}
-        reference = {"1"}
         button={{
           text: "Close",
-          scrollToBottom: false,
-          remember: true,
+          scrollToBottom: true,
+          remember: {reference : "4"},
           callback: () => ok(),
-          sticky: true,
+          sticky: false,
           mandatoryCheck: {
             text: "Je certifie avoir lu et j'acceppte les conditions générales d'utilisation de cette application de merde",
             errorText: "Merci d'accepter les confition générales d'utilisations",

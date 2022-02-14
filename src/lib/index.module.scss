@@ -32,6 +32,7 @@
 
 //==============================================
 .title {
+    display: block;
     text-align: center;
 }
 
@@ -43,7 +44,7 @@
 //==============================================
 .scrollToContainer {
     position: sticky;
-    display: inline-block;
+    display: block;
     height: 0;
     width: 0;
     top: 80%;
@@ -85,6 +86,9 @@
     text-align: left;
     input {
         margin: 0 10px 0 0;
+        cursor: pointer;
+    }
+    label {
         cursor: pointer;
     }
 }

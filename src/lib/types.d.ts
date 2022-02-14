@@ -17,7 +17,7 @@ interface IMandatoryCheck {
 interface IButton {
   text: string;
   scrollToBottom: boolean;
-  remember: boolean;
+  remember?: {reference : string};
   callback: Function;
   mandatoryCheck?: IMandatoryCheck; // i have read everything bla bla
   sticky: boolean;
@@ -31,7 +31,6 @@ interface ICustomIcon {
 //============================================
 interface INeoversionProps {
   isOpen: boolean;
-  reference : string
   title: string;
   customIcon?: ICustomIcon;
   customStyles?: ICustomStyles | undefined;
