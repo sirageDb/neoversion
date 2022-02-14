@@ -1,12 +1,13 @@
 import React, { useState, useRef, useEffect } from "react";
+import ReactMarkdown from "react-markdown";
 import styles from "./index.module.scss";
 
 export default function Neoversion({
   isOpen,
   customIcon,
   customStyles,
-  title,
   button,
+  content,
 }: INeoversionProps): JSX.Element | any {
   // Error handlers
   //==========================================================
@@ -117,38 +118,7 @@ export default function Neoversion({
             )}
 
             {/* ========================================================== */}
-            <h2 className={styles.title}>{title}</h2>
-            <div className={styles.content}>
-              dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
-              type specimen book. It has survived not only five centuries, but also the leap into electronic
-              typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset
-              sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus
-              PageMaker including versions of Lorem Ipsum.is simply dummy text of the printing and typesetting industry.
-              Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took
-              a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
-              but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the
-              1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
-              publishing software like Aldus PageMaker including versions of Lorem Ipsum.is simply dummy text of the
-              printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the
-              1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has
-              surv including versions of Lorem Ipsum.is simply dummy text of the printing and typesetting industry.
-              Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took
-              a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
-              but also the leap into electronic typesetting, remaincluding versions of Lorem Ipsum.is simply dummy text
-              of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever
-              since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
-              book. It has survived not only five centuries, but also the leap into electronic typesetting,
-              remaincluding versions of Lorem Ipsum.is simply dummy text of the printing and typesetting industry. Lorem
-              Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
-              galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but
-              also the leap into electronic typesetting, rema ectronic typesetting, remaining essentially unchanged. It
-              was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more
-              recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.is simply
-              dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
-              text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
-              specimen book. It has surv including versions of Lorem Ipsum.is simply dummy text of the printing and
-              typesetting industry. Lorem Ipsum has been the industry's standard dummy
-            </div>
+            <ReactMarkdown children={content} />
 
             {/* ========================================================== */}
             <div

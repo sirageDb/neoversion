@@ -37,11 +37,6 @@
 }
 
 //==============================================
-.content {
-    padding-bottom: 2%;
-}
-
-//==============================================
 .scrollToContainer {
     position: sticky;
     display: block;
@@ -90,6 +85,7 @@
     }
     label {
         cursor: pointer;
+        font-weight: bold;
     }
 }
 

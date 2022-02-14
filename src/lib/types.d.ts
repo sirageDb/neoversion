@@ -31,8 +31,8 @@ interface ICustomIcon {
 //============================================
 interface INeoversionProps {
   isOpen: boolean;
-  title: string;
   customIcon?: ICustomIcon;
   customStyles?: ICustomStyles | undefined;
   button: IButton;
+  content : string;
 }

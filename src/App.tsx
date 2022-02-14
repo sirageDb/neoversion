@@ -27,12 +27,11 @@ function App() {
       tware like Aldus PageMaker including versions of Lorem Ipsum.
       <Neoversion
         isOpen={isOpen}
-        title="Icon"
         customIcon={{icon : icon, iconAlt : "This is icon alt"}}
         button={{
           text: "Close",
           scrollToBottom: true,
-          remember: {reference : "4"},
+          remember: {reference : "5"},
           callback: () => ok(),
           sticky: false,
           mandatoryCheck: {
@@ -40,6 +39,7 @@ function App() {
             errorText: "Merci d'accepter les confition générales d'utilisations",
           },
         }}
+        content = {`volutpat. Quisque vitae lectus ut leo faucibus faucibus. Donec vestibulum mi nec dui hendrerit, in pharetra tellus finibus. Maecenas ligula eros, mollis sed libero et, congue tincidunt justo. Duis volutpat mollis rutrum. Curabitur iaculis quam at dui suscipit scelerisque. Praesent semper mi est. Maecenas fringilla mollis enim, at maximus nunc.`}
       />
     </div>
   );
