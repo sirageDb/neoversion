@@ -32,7 +32,7 @@ interface ICustomIcon {
 interface INeoversionProps {
   isOpen: boolean;
   customIcon?: ICustomIcon;
-  customStyles?: ICustomStyles | undefined;
+  customStyles?: ICustomStyles;
   button: IButton;
   content : string;
 }

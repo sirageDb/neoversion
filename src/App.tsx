@@ -5,7 +5,7 @@ import icon from "./partyIcon.png";
 function App() {
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
-  const ok = () => {
+  const visibilityHandler = () => {
     setIsOpen(false);
   };
 
@@ -32,11 +32,11 @@ function App() {
           text: "Close",
           scrollToBottom: true,
           remember: {reference : "5"},
-          callback: () => ok(),
+          callback: () => visibilityHandler(),
           sticky: false,
           mandatoryCheck: {
-            text: "Je certifie avoir lu et j'acceppte les conditions générales d'utilisation de cette application de merde",
-            errorText: "Merci d'accepter les confition générales d'utilisations",
+            text: "I consent etc...",
+            errorText: "error, please check ... ",
           },
         }}
         content = {`volutpat. Quisque vitae lectus ut leo faucibus faucibus. Donec vestibulum mi nec dui hendrerit, in pharetra tellus finibus. Maecenas ligula eros, mollis sed libero et, congue tincidunt justo. Duis volutpat mollis rutrum. Curabitur iaculis quam at dui suscipit scelerisque. Praesent semper mi est. Maecenas fringilla mollis enim, at maximus nunc.`}
