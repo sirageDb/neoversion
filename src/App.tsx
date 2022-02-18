@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Neoversion from "./lib";
+import Neoversion from "./neoversion/src";
 import icon from "./partyIcon.png";
 
 function App() {
@@ -17,6 +17,7 @@ function App() {
         }}
       >
         Open overlay
+        
       </button>
       lso the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with
       the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software
@@ -31,7 +32,6 @@ function App() {
         button={{
           text: "Close",
           scrollToBottom: true,
-          remember: {reference : "5"},
           callback: () => visibilityHandler(),
           sticky: false,
           mandatoryCheck: {

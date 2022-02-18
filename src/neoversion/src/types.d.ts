@@ -1,3 +1,5 @@
+import { CSSProperties } from "react";
+
 //==============================================
 interface ICustomStyles {
   width?: number;

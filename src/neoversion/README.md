@@ -6,13 +6,13 @@ https://github.com/remarkjs/react-markdown
 
 ## What is and why ?
 
-Neoversion.js is a react component that i created to simplify the process of announcing new changes to your app/site users when they use your application.
+Neoversion.js is a react component, created to simplify the process of announcing new changes to your app/site users when they use your application.
 
 ---
 
 ## When ? usecases ?
 
-neoversion can be usefull in theses cases : 
+neoversion can be usefull in theses cases :
 
 - You want a component a ready to use component to announce new changes to your application/site/user condition etc...
 - You can tell the component to remember if a user don't want to show the component again, or to show it everytime.

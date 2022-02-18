@@ -1,6 +1,8 @@
 import React, { useState, useRef, useEffect } from "react";
-import ReactMarkdown from "react-markdown";
 import styles from "./index.module.scss";
+import ReactMarkdown from "react-markdown";
+import { INeoversionProps } from "./types";
+
 
 export default function Neoversion({
   isOpen,
@@ -19,7 +21,7 @@ export default function Neoversion({
   const [isVisibleErrorText, setIsVisibleErrorText] = useState<boolean>(false);
   const [isRemembered, setIsRemembered] = useState<boolean>(false);
   const buttonContainerRef = useRef<HTMLDivElement>(null);
-  //=========================================
+  //==========================================================
   const customUserStyles = {
     width: (customStyles?.width && `${customStyles?.width}px`) || "700px",
     top: (customStyles?.top && `${customStyles?.top}vh`) || "4vh",

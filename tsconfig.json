@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "target": "ES6", /* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. */
     "lib": [
       "dom",
       "dom.iterable",
@@ -13,12 +13,15 @@
     "strict": true,
     "forceConsistentCasingInFileNames": true,
     "noFallthroughCasesInSwitch": true,
-    "module": "esnext",
+    "module": "commonjs",                                /* Specify what module code is generated. */
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx"
+    "jsx": "react",
+    "noImplicitAny": true,
+    "types": ["node"],                                      /* Specify type package names to be included without being referenced in a source file. */
+
   },
   "include": [
     "src"
