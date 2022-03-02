@@ -3,7 +3,6 @@ import styles from "./index.module.scss";
 import ReactMarkdown from "react-markdown";
 import { INeoversionProps } from "./types";
 
-
 export default function Neoversion({
   isOpen,
   customIcon,
@@ -130,8 +129,15 @@ export default function Neoversion({
             >
               {button.mandatoryCheck && (
                 <p className={styles.checkContainer}>
-                  <input id="neoversionMandatoryCheckbox" type={"checkbox"} checked={isChecked} onChange={handleCheckboxChange} />
-                  <label className={styles.checkLabel} htmlFor="neoversionMandatoryCheckbox">{button.mandatoryCheck.text}</label>
+                  <input
+                    id="neoversionMandatoryCheckbox"
+                    type={"checkbox"}
+                    checked={isChecked}
+                    onChange={handleCheckboxChange}
+                  />
+                  <label className={styles.checkLabel} htmlFor="neoversionMandatoryCheckbox">
+                    {button.mandatoryCheck.text}
+                  </label>
                 </p>
               )}
               {isVisibleErrorText === true && <p className={styles.errorText}>{button.mandatoryCheck?.errorText}</p>}

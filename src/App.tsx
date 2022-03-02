@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import Neoversion from "./neoversion/src";
 import icon from "./partyIcon.png";
+import Neoversion from "./components/neoversion";
 
 function App() {
   const [isOpen, setIsOpen] = useState<boolean>(false);
@@ -17,7 +17,6 @@ function App() {
         }}
       >
         Open overlay
-        
       </button>
       lso the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with
       the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software
@@ -28,7 +27,7 @@ function App() {
       tware like Aldus PageMaker including versions of Lorem Ipsum.
       <Neoversion
         isOpen={isOpen}
-        customIcon={{icon : icon, iconAlt : "This is icon alt"}}
+        customIcon={{ icon: icon, iconAlt: "This is icon alt" }}
         button={{
           text: "Close",
           scrollToBottom: true,
@@ -39,7 +38,7 @@ function App() {
             errorText: "error, please check ... ",
           },
         }}
-        content = {`volutpat. Quisque vitae lectus ut leo faucibus faucibus. Donec vestibulum mi nec dui hendrerit, in pharetra tellus finibus. Maecenas ligula eros, mollis sed libero et, congue tincidunt justo. Duis volutpat mollis rutrum. Curabitur iaculis quam at dui suscipit scelerisque. Praesent semper mi est. Maecenas fringilla mollis enim, at maximus nunc.`}
+        content={`volutpat. Quisque vitae lectus ut leo faucibus faucibus. Donec vestibulum mi nec dui hendrerit, in pharetra tellus finibus. Maecenas ligula eros, mollis sed libero et, congue tincidunt justo. Duis volutpat mollis rutrum. Curabitur iaculis quam at dui suscipit scelerisque. Praesent semper mi est. Maecenas fringilla mollis enim, at maximus nunc.`}
       />
     </div>
   );

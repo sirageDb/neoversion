@@ -19,7 +19,9 @@
     border-radius: 15px;
 }
 
-//==============================================
+
+/* ============================================== */
+
 .iconContainer {
     margin: auto;
     text-align: center;
@@ -30,13 +32,17 @@
     margin: auto;
 }
 
-//==============================================
+
+/* ============================================== */
+
 .title {
     display: block;
     text-align: center;
 }
 
-//==============================================
+
+/* ============================================== */
+
 .scrollToContainer {
     position: sticky;
     display: block;
@@ -61,13 +67,16 @@
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     border-radius: 50%;
     background-color: #fff;
-    svg {
-        width: 30px;
-        height: 30px;
-    }
 }
 
-//==============================================
+.scrollToBottom>svg {
+    width: 30px;
+    height: 30px;
+}
+
+
+/* ============================================== */
+
 .buttonContainer {
     padding: 1%;
     bottom: 0;
@@ -79,14 +88,16 @@
 .checkContainer {
     margin: 0;
     text-align: left;
-    input {
-        margin: 0 10px 0 0;
-        cursor: pointer;
-    }
-    label {
-        cursor: pointer;
-        font-weight: bold;
-    }
+}
+
+.checkContainer>input {
+    margin: 0 10px 0 0;
+    cursor: pointer;
+}
+
+.checkContainer>label {
+    cursor: pointer;
+    font-weight: bold;
 }
 
 .errorText {
@@ -102,8 +113,9 @@
     background-color: #333333;
     border: 2px solid #333333;
     color: #ffffff;
-    &:hover {
-        background-color: #fff;
-        color: rgb(0, 0, 0);
-    }
+}
+
+.button:hover {
+    background-color: #fff;
+    color: rgb(0, 0, 0);
 }

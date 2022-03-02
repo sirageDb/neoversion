@@ -1,7 +1,7 @@
 import { CSSProperties } from "react";
 
 //==============================================
-interface ICustomStyles {
+export interface ICustomStyles {
   width?: number;
   top?: number;
   height?: number;
@@ -10,13 +10,13 @@ interface ICustomStyles {
 }
 
 
-interface IMandatoryCheck {
+export interface IMandatoryCheck {
    text : string;
    errorText : string;
 }
 
 //============================================
-interface IButton {
+export interface IButton {
   text: string;
   scrollToBottom: boolean;
   remember?: {reference : string};
@@ -26,12 +26,12 @@ interface IButton {
   ultraCustomStyles?: CSSProperties;
 }
 //============================================
-interface ICustomIcon {
+export interface ICustomIcon {
   icon: string;
   iconAlt: string;
 }
 //============================================
-interface INeoversionProps {
+export interface INeoversionProps {
   isOpen: boolean;
   customIcon?: ICustomIcon;
   customStyles?: ICustomStyles;
